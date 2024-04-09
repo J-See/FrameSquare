@@ -19,11 +19,16 @@
       rgba(253, 29, 29, 1) 50%,
       rgba(252, 176, 69, 1) 100%);
   /* colors */
-  --hover-color: #3a86ff;
+  --hover-color1: #3a86ff;
+  --hover-color2: #639efc;
   --blue: #00bbf9;
   --yellow: #ffbe0b;
   --orange: #f26419;
   --green: #02c39a;
+  --gray: #dedede80;
+  /* sizes */
+  --icon-size: 2rem;
+
 }
 
 * {
@@ -42,14 +47,10 @@ a {
   padding: 0 3%;
 }
 
-.text-logo {
-  font-family: "Titillium Web";
-  font-size: 1.7rem;
-  color: var(--text-black);
-  font-weight: bold;
-  font-style: normal;
-  text-transform: capitalize;
-  /* text-shadow: rgb(0, 0, 0) 1px 1px 8px; */
+nav {
+  position: fixed;
+  width: 100%;
+
 }
 
 .head-1 {

@@ -16,9 +16,18 @@
   flex-basis: 0;
 
   .logo-svg {
-    font-size: 2rem;
+    font-size: var(--icon-size);
     margin-bottom: auto;
   }
+}
+
+.text-logo {
+  font-family: "Titillium Web";
+  font-size: 1.7rem;
+  color: var(--text-black);
+  font-weight: bold;
+  font-style: normal;
+  text-transform: capitalize;
 }
 
 .nav-links {
@@ -33,24 +42,24 @@
     list-style: none;
     text-decoration: none;
     display: flex;
-    align-items: baseline;
     justify-content: center;
-    gap: 20px;
+    column-gap: 10px;
 
   }
+
+
 }
 
 .nav-link {
   color: var(--text-black);
+  padding: 3px 10px;
+}
 
-  &:hover {
-    padding: 3px 6px;
-    color: var(--text-white);
-    background-color: var(--hover-color);
-    /* font-size: 1.2rem; */
-    transition: all 0.4s ease;
-    border-radius: 7px;
-  }
+.nav-link:hover {
+  color: var(--text-black);
+  background-color: var(--gray);
+  transition: all 0.4s ease;
+  border-radius: 30px;
 }
 
 .contact-num {
@@ -70,11 +79,46 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+.nav-links,
+.contact-num {
+  display: none;
+}
 
-  .nav-links,
-  .contact-num {
-    display: none;
-  }
+.navbar .menu-icons {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open,
+.close {
+  font-size: var(--icon-size);
+  color: var(--text-black);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
 
 }
+
+.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.menu-icons.active>.open {
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.menu-icons.active>.close {
+  opacity: 1;
+  pointer-events: none;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {}

@@ -1,6 +1,13 @@
 import { MdWbSunny } from "react-icons/md";
+import { RxCross1 } from "react-icons/rx";
+import { RiMenu3Line } from "react-icons/ri";
 import "../styles/Navbar.css";
+import { useState } from "react";
 const Navbar = () => {
+  const [active, setActive] = useState(false);
+  function handletoogle() {
+    setActive((active) => !active);
+  }
   return (
     <nav>
       <div className="navbar container">
@@ -27,6 +34,11 @@ const Navbar = () => {
                 Services
               </a>
             </li>
+            <li>
+              <a href="#" className="nav-link">
+                Contact Us
+              </a>
+            </li>
           </ul>
         </div>
         {/* contact number */}
@@ -35,6 +47,12 @@ const Navbar = () => {
             <img src="./images/india-flag-icon.svg" alt="indian flag" />
           </figure>
           <span>+91 98194 59305</span>
+        </div>
+        {/* icons */}
+        {/* <div className={`"menu-icons ${active ? "active" : ""}"`}> */}
+        <div className={active ? "menu-icons active" : "menu-icons"}>
+          <RiMenu3Line className="open" onClick={() => setActive(!active)} />
+          <RxCross1 className="close" />
         </div>
       </div>
     </nav>
