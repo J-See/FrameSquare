@@ -49,7 +49,6 @@ const Navbar = () => {
           <span>+91 98194 59305</span>
         </div>
         {/* icons */}
-        {/* <div className={`"menu-icons ${active ? "active" : ""}"`}> */}
         <div className={active ? "menu-icons active" : "menu-icons"}>
           <RiMenu3Line className="open" onClick={() => setActive(!active)} />
           <RxCross1 className="close" />
