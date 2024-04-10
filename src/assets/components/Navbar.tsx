@@ -17,7 +17,7 @@ const Navbar = () => {
           <span className="text-logo">FrameSquare</span>
         </div>
         {/* nav links */}
-        <div className="nav-links">
+        <div className={active ? "nav-links active" : "nav-links"}>
           <ul>
             <li>
               <a href="#" className="nav-link">
@@ -49,9 +49,10 @@ const Navbar = () => {
           <span>+91 98194 59305</span>
         </div>
         {/* icons */}
-        <div className={active ? "menu-icons active" : "menu-icons"}>
+        {/* <div className={active ? "menu-icons active" : "menu-icons"}> */}
+        <div className="menu-icons">
           <RiMenu3Line className="open" onClick={() => setActive(!active)} />
-          <RxCross1 className="close" />
+          <RxCross1 className="close" onClick={() => setActive(!active)} />
         </div>
       </div>
     </nav>
