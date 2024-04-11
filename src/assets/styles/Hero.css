@@ -1,0 +1,22 @@
+.hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* height: 500px; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/images/bg.jpg');
+    background-size: 100% auto;
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    height: -webkit-fill-available;
+}
