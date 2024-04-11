@@ -9,6 +9,7 @@ header {
 .grid:nth-child(1) {
     grid-area: logo;
     /* background-color: red; */
+
 }
 
 .grid:nth-child(2) {
@@ -52,6 +53,10 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+    div.logo-img img {
+        max-width: 11em;
+    }
+
     .menu-icon {
         display: block;
     }
@@ -75,7 +80,7 @@ header {
         row-gap: 2em;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.5);
-        /* z-index: 999; */
+        z-index: 10;
         transform: translateX(calc(100% + 0.5rem));
         transition: transform 0.3s ease-in-out;
     }
