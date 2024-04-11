@@ -5,9 +5,6 @@ import "../styles/Navbar.css";
 import { useState } from "react";
 const Navbar = () => {
   const [active, setActive] = useState(false);
-  function handletoogle() {
-    setActive((active) => !active);
-  }
   return (
     <nav>
       <div className="navbar container">
