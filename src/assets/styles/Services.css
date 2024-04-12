@@ -1,0 +1,48 @@
+.services-section>h2 {
+    padding-bottom: 1.2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center;
+    text-wrap: pretty;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.services-container>div {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-container>div:hover {
+    transform: translateY(-5px);
+}
+
+.services-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    /* Optional: add a border below the image */
+}
+
+.services-container h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    text-wrap: pretty;
+    margin: 10px 10px;
+}
+
+.services-container p {
+    font-size: 1rem;
+    text-align: center;
+    text-wrap: pretty;
+    color: #666;
+    margin: 10px 10px;
+}
