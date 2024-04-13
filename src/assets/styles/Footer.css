@@ -1,0 +1,88 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.footer-contact,
+.footer-navigation,
+.footer-sitemap,
+.footer-legal,
+.footer-subscribe,
+.footer-accessibility {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media-icons a {
+    color: #fff;
+}
+
+.social-media-icons a:hover {
+    color: #ccc;
+}
+
+.footer-legal p {
+    margin-bottom: 5px;
+}
+
+.footer-legal a {
+    color: #fff;
+}
+
+.footer-legal a:hover {
+    color: #ccc;
+}
+
+.footer-subscribe form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-subscribe input[type="email"],
+.footer-subscribe button {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.footer-subscribe input[type="email"] {
+    flex: 1;
+}
+
+.footer-subscribe button {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+    background-color: #ccc;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #ccc;
+}

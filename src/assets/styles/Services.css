@@ -7,13 +7,95 @@
     text-wrap: pretty;
 }
 
-.services-container {
+.services-scroll-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+/* #### crads container #### */
+/* #### left and right btn #### */
+.left-btn,
+.right-btn {
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+}
+
+.left-icon,
+.right-icon {
+    width: inherit;
+    height: inherit;
+    transition: transform 0.3s ease;
+}
+
+.left-btn:hover .left-icon {
+    transform: translateX(-5px);
+}
+
+.right-btn:hover .right-icon {
+    transform: translateX(5px);
+}
+
+/* .services-container {
     display: grid;
+    padding: 2rem 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+} */
+.services-container {
+    padding: 1rem 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    scroll-snap-type: inline mandatory;
     gap: 20px;
 }
 
+/* > services container scrollbar */
+.services-container {
+    &::-webkit-scrollbar {
+        height: 7px;
+        width: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: #DFE9EB;
+
+        &:hover,
+        &:active {
+            background-color: #DFE9EB;
+        }
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #397524;
+
+        &:hover,
+        &:active {
+            background-color: #62A34B;
+        }
+    }
+}
+
+
+
+
+/* #### cards #### */
+.service {
+    inline-size: 16em;
+    height: auto;
+    scroll-snap-align: start;
+}
+
 .services-container>div {
+    width: fit-content;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -28,6 +110,7 @@
 .services-container img {
     width: 100%;
     height: auto;
+    border-radius: inherit;
     border-bottom: 1px solid #ddd;
     /* Optional: add a border below the image */
 }
