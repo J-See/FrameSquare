@@ -21,27 +21,31 @@ const Nav = () => {
           {/* licks */}
           <ul className={`grid nav-lists ${active ? "active" : ""}`}>
             <li>
-              <a href="#" className="nav-link">
+              <a href="#" className="nav-link" onClick={toggleMenu}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <a href="#" className="nav-link" onClick={toggleMenu}>
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <a href="#" className="nav-link" onClick={toggleMenu}>
                 Services
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <a href="#" className="nav-link" onClick={toggleMenu}>
                 Contact me
               </a>
             </li>
             <li>
-              <a href="tel:+919619882057" className="contact">
+              <a
+                href="tel:+919619882057"
+                className="contact"
+                onClick={toggleMenu}
+              >
                 Call us
               </a>
             </li>
