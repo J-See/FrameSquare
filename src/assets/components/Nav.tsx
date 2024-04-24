@@ -8,7 +8,6 @@ const Nav = () => {
   const [active, setActive] = useState(false);
   const toggleMenu = () => {
     setActive(!active);
-    // console.log(active);
   };
   return (
     <>

@@ -58,6 +58,15 @@
 
 /* > services container scrollbar */
 .services-container {
+    width: 54em;
+    height: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* .services-container {
     &::-webkit-scrollbar {
         height: 7px;
         width: 7px;
@@ -82,7 +91,7 @@
             background-color: #62A34B;
         }
     }
-}
+} */
 
 
 
@@ -128,4 +137,18 @@
     text-wrap: pretty;
     color: #666;
     margin: 10px 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .services-section>h2 {
+        font-size: 1.8rem;
+    }
+
+    .service>img {
+        width: 13em;
+    }
+
+    .services-scroll-container {
+        column-gap: 1rem;
+    }
 }

@@ -7,17 +7,21 @@ const Services = () => {
   const servicesContainerRef = useRef(null);
 
   const scrollLeft = () => {
-    servicesContainerRef.current.scrollBy({
-      left: -300, // Adjust the scroll amount as needed
-      behavior: "smooth",
-    });
+    if (servicesContainerRef.current) {
+      servicesContainerRef.current.scrollBy({
+        left: -300, // Adjust the scroll amount as needed
+        behavior: "smooth",
+      });
+    }
   };
 
   const scrollRight = () => {
-    servicesContainerRef.current.scrollBy({
-      left: 300, // Adjust the scroll amount as needed
-      behavior: "smooth",
-    });
+    if (servicesContainerRef.current) {
+      servicesContainerRef.current.scrollBy({
+        left: 300, // Adjust the scroll amount as needed
+        behavior: "smooth",
+      });
+    }
   };
   return (
     <div className="services-section container">

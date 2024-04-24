@@ -7,12 +7,7 @@
     grid-gap: 20px;
 }
 
-.footer-contact,
-.footer-navigation,
-.footer-sitemap,
-.footer-legal,
-.footer-subscribe,
-.footer-accessibility {
+.footer-contact {
     display: flex;
     flex-direction: column;
 }
@@ -34,43 +29,7 @@
     color: #ccc;
 }
 
-.footer-legal p {
-    margin-bottom: 5px;
-}
 
-.footer-legal a {
-    color: #fff;
-}
-
-.footer-legal a:hover {
-    color: #ccc;
-}
-
-.footer-subscribe form {
-    display: flex;
-    align-items: center;
-}
-
-.footer-subscribe input[type="email"],
-.footer-subscribe button {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-}
-
-.footer-subscribe input[type="email"] {
-    flex: 1;
-}
-
-.footer-subscribe button {
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-}
-
-.footer-subscribe button:hover {
-    background-color: #ccc;
-}
 
 .back-to-top {
     position: fixed;
