@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import myLogo from "/images/logo.png";
+import myLogo from "/images/logo.svg";
 import menu from "/images/menu.svg";
 import close from "/images/close.svg";
 import "../styles/Nav.css";
