@@ -24,7 +24,7 @@ const Services = () => {
     }
   };
   return (
-    <div className="services-section container">
+    <div className="services-section container" id="services">
       <h2 className="title">Our Services</h2>
       <div className="services-scroll-container">
         <div className="left-btn">

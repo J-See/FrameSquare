@@ -1,18 +1,23 @@
 import Nav from "./assets/components/Nav";
+import Foot from "./assets/components/Foot";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./assets/components/Home";
 import About from "./assets/components/About";
 import Services from "./assets/components/Services";
-import Foot from "./assets/components/Foot";
 import Map from "./assets/components/Map";
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Nav />
-      <About />
-      <Services />
-      <Map />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/map" element={<Map />} /> */}
+      </Routes>
       <Foot />
-    </>
+    </BrowserRouter>
   );
 };
 

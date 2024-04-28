@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Map.css";
 const Map = () => {
   return (
-    <div className="map-section">
+    <div className="map-section" id="map">
       <h2 className="title">Reach Us</h2>
       <div className="gmap">
         <iframe
