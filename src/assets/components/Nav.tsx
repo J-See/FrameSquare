@@ -3,11 +3,21 @@ import myLogo from "/images/logo.png";
 import menu from "/images/menu.svg";
 import close from "/images/close.svg";
 import "../styles/Nav.css";
+import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [active, setActive] = useState(false);
   const toggleMenu = () => {
     setActive(!active);
+  };
+
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      element.classList.add("smooth-scroll");
+    }
   };
   return (
     <>
@@ -20,24 +30,52 @@ const Nav = () => {
           {/* licks */}
           <ul className={`grid nav-lists ${active ? "active" : ""}`}>
             <li>
-              <a href="#" className="nav-link" onClick={toggleMenu}>
+              <NavLink to="/" onClick={toggleMenu}>
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="nav-link" onClick={toggleMenu}>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="nav-link"
+                onClick={toggleMenu}
+              >
                 About
-              </a>
+              </Link>
+
+              {/* <NavLink to="/about" onClick={() => scrollToElement("about")}>
+                About
+              </NavLink> */}
             </li>
             <li>
-              <a href="#" className="nav-link" onClick={toggleMenu}>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="nav-link"
+                onClick={toggleMenu}
+              >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link" onClick={toggleMenu}>
-                Contact me
-              </a>
+              <Link
+                to="map"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="nav-link"
+                onClick={toggleMenu}
+              >
+                Reach us
+              </Link>
             </li>
             <li>
               <a

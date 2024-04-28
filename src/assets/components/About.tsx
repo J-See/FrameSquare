@@ -29,7 +29,7 @@ const About = () => {
     }
   };
   return (
-    <div className="about-section">
+    <div className="about-section" id="about">
       {/* left part */}
       <div className="left-part">
         <h2>Ashok Vishwakarma</h2>
