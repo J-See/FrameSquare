@@ -1,0 +1,14 @@
+.map-section {
+    padding: 1rem 0 3rem 0;
+}
+
+.gmap {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    iframe {
+        border-radius: 10px;
+    }
+}

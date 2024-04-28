@@ -25,7 +25,7 @@ const Services = () => {
   };
   return (
     <div className="services-section container">
-      <h2>Our Services</h2>
+      <h2 className="title">Our Services</h2>
       <div className="services-scroll-container">
         <div className="left-btn">
           <FaAnglesLeft className="left-icon" onClick={scrollLeft} />
