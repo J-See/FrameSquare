@@ -1,0 +1,24 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #ccc;
+}
