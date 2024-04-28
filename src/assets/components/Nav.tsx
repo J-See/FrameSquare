@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import myLogo from "/images/logo.png";
 import menu from "/images/menu.svg";
 import close from "/images/close.svg";
@@ -7,11 +7,56 @@ import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
+  // ## menu toggle
   const [active, setActive] = useState(false);
   const toggleMenu = () => {
     setActive(!active);
   };
 
+  // ## Handle click outside the navbar to deactivate
+  const handleClickOutside = (event) => {
+    if (!event.target.closest(".navbar")) {
+      // Check if clicked outside navbar
+      setActive(false);
+    }
+  };
+  // ## Handle click on body or outside navbar
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
+  // ## email or call
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      );
+    };
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => window.removeEventListener("resize", checkIsMobile);
+  }, []);
+  const handleContactClick = () => {
+    const phoneNumber = "9819459305";
+    const emailAddress = "your-email-address@example.com";
+
+    if (isMobile) {
+      if (/WhatsApp/.test(navigator.userAgent)) {
+        window.location.href = `whatsapp://send?phone=${phoneNumber}`;
+      } else {
+        window.location.href = `tel:${phoneNumber}`;
+      }
+    } else {
+      window.location.href = `mailto:${emailAddress}`;
+    }
+  };
+
+  // ## scroll with NavLink
   const scrollToElement = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -22,7 +67,7 @@ const Nav = () => {
   return (
     <>
       <header>
-        <nav className="navbar container">
+        <nav className={`navbar container ${active ? "active" : ""}`}>
           {/* logo */}
           <div className="grid logo-img">
             <img src={myLogo} alt="logo" />
@@ -78,12 +123,15 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <a
+              {/* <a
                 href="tel:+919619882057"
                 className="contact"
                 onClick={toggleMenu}
               >
                 Call us
+              </a> */}
+              <a className="contact" onClick={handleContactClick}>
+                {isMobile ? "Call" : "Email"}
               </a>
             </li>
           </ul>

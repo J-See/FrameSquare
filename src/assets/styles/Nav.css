@@ -1,5 +1,5 @@
-header {
-    background-color: rgb(116, 116, 224);
+header nav {
+    border-bottom: 1.8px solid #7d5ee3;
 }
 
 .grid {
@@ -41,6 +41,11 @@ header {
     align-self: center;
 }
 
+.nav-lists li {
+    align-self: baseline;
+    cursor: pointer;
+}
+
 .nav-lists li a {
     color: black;
     text-decoration: none;
@@ -51,6 +56,30 @@ header {
     cursor: pointer;
     display: none;
 }
+
+.contact {
+    background: linear-gradient(to right, #5482d0, #7d5ee3);
+    background-color: #5482d0;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    padding: 10px 22px;
+    border: 0px solid #000;
+    border-radius: 100px;
+    display: inline-block;
+    transition: all 0.5s ease;
+
+    &:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        background: #fff;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     div.logo-img img {
@@ -69,7 +98,7 @@ header {
     .nav-lists {
         display: flex;
         position: absolute;
-        top: 4rem;
+        top: 3rem;
         left: 0.5rem;
         right: 0.5rem;
         bottom: 0.5rem;
@@ -79,13 +108,22 @@ header {
         justify-content: center;
         row-gap: 2em;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color:
+            #FAF8ED;
         z-index: 10;
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
         /* transform: translateX(calc(100% + 0.5rem)); */
         transition: transform 0.3s ease-in-out;
+
+        li {
+            align-self: auto;
+
+            a {
+                font-size: 30px;
+            }
+        }
     }
 
     .nav-lists.active {
