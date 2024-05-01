@@ -97,17 +97,9 @@ const Nav = () => {
               </NavLink> */}
             </li>
             <li>
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-                className="nav-link"
-                onClick={toggleMenu}
-              >
+              <NavLink to="services" onClick={toggleMenu}>
                 Services
-              </Link>
+              </NavLink>
             </li>
             <li>
               <Link

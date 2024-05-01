@@ -8,19 +8,3 @@
         text-align: center;
     }
 }
-
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-clip: text;
-    font-size: 18px;
-    color: #333;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.back-to-top:hover {
-    background-color: #ccc;
-}
