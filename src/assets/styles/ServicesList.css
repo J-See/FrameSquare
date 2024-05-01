@@ -1,0 +1,47 @@
+.services-list-container {
+    width: auto;
+    height: auto;
+    margin: 0 7rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-list {
+    width: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: inherit;
+        border-bottom: 1px solid #ddd;
+        /* Optional: add a border below the image */
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        text-align: center;
+        text-wrap: pretty;
+        margin: 10px 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+        text-wrap: pretty;
+        color: #666;
+        margin: 10px 10px;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
