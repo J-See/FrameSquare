@@ -81,7 +81,7 @@ const Nav = () => {
                 Home
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="about"
                 spy={true}
@@ -93,13 +93,13 @@ const Nav = () => {
               >
                 About
               </Link>
-            </li>
+            </li> */}
             <li>
               <NavLink to="services" onClick={toggleMenu}>
                 Services
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="map"
                 spy={true}
@@ -111,15 +111,8 @@ const Nav = () => {
               >
                 Reach us
               </Link>
-            </li>
+            </li> */}
             <li>
-              {/* <a
-                href="tel:+919619882057"
-                className="contact"
-                onClick={toggleMenu}
-              >
-                Call us
-              </a> */}
               <a className="contact" onClick={handleContactClick}>
                 {isMobile ? "Call" : "Email"}
               </a>

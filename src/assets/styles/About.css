@@ -8,9 +8,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    column-gap: 2.5rem;
 }
 
 .left-part {
+    align-self: center;
+    text-align: center;
+
     h2 {
         font-size: xxx-large;
     }
@@ -19,21 +23,6 @@
         font-size: large;
         margin-bottom: 1em;
     }
-
-    /* .contactButton {
-        margin-top: 1rem;
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: #fff;
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
-
-        &:hover {
-            background-color: #0069d9;
-        }
-    } */
 
     .contactButton {
         background: linear-gradient(to right, #196BCA, #6433E0);
@@ -63,7 +52,10 @@
 
 }
 
+
 .right-part>img {
+    max-width: 250px;
+    aspect-ratio: 1;
     border-radius: 50%;
 }
 
@@ -87,6 +79,8 @@
 
         .contactButton {
             width: auto;
+            margin-right: 0;
+            margin-bottom: 1rem;
         }
     }
 

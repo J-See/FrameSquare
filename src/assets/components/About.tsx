@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/About.css";
 import { Link } from "react-scroll";
 const About = () => {
+  const profile_img = "/images/PP.jpg";
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const checkIsMobile = () => {
@@ -34,7 +35,10 @@ const About = () => {
       {/* left part */}
       <div className="left-part">
         <h2>Ashok Vishwakarma</h2>
-        <p>I am aluminium fabrication worker</p>
+        <p>
+          I am aluminium fabrication worker over 20+ years of experience and
+          have served 100+ satisfied customers.
+        </p>
         <button className="contactButton" onClick={handleContactClick}>
           {isMobile ? "Contact Me" : "Email Me"}
         </button>
@@ -51,7 +55,7 @@ const About = () => {
       </div>
       {/* right part */}
       <div className="right-part">
-        <img src="https://via.placeholder.com/250" alt="about image" />
+        <img src={profile_img} alt="about image" />
       </div>
     </div>
   );
