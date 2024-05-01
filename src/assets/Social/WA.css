@@ -6,8 +6,8 @@
 }
 
 .whatsapp-btn {
-    width: 60px;
-    height: 60px;
+    width: var(--icon-size);
+    height: var(--icon-size);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +25,8 @@
 .whatsapp-btn:after {
     content: '';
     border-color: inherit;
-    width: 60px;
-    height: 60px;
+    width: var(--icon-size);
+    height: var(--icon-size);
     border-radius: 50%;
     position: absolute;
     box-shadow: 0 0 0 0 rgba(0, 255, 94, 0);
@@ -36,8 +36,8 @@
 .whatsapp-btn svg {
     fill: #fff;
     padding: 0.5rem;
-    width: 55px;
-    height: 55px;
+    width: var(--icon-svg-size);
+    height: var(--icon-svg-size);
 }
 
 @keyframes _pulse {

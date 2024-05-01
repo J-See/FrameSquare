@@ -1,0 +1,8 @@
+.show-on-scroll {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show-on-scroll.visible {
+    opacity: 1;
+}

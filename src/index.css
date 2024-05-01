@@ -26,7 +26,8 @@
   --green: #02c39a;
   --gray: #dedede80;
   /* sizes */
-  --icon-size: 2rem;
+  --icon-size: 2.6rem;
+  --icon-svg-size: 8rem;
 
 }
 

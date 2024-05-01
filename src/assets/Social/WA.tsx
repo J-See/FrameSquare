@@ -1,5 +1,6 @@
 import "../Social/WA.css";
 import { FaWhatsapp } from "react-icons/fa6";
+import ShowOnScroll from "../suppoters/ShowOnScroll";
 const WA = () => {
   const openWhatsAppChat = (phoneNumber: number, message = "") => {
     const encodedMessage = encodeURIComponent(message);
@@ -9,16 +10,18 @@ const WA = () => {
 
   return (
     <>
-      <div className="floating-whatsapp-btn">
-        <div
-          className="whatsapp-btn"
-          onClick={() =>
-            openWhatsAppChat(1234567890, "Hi there, I have a question...")
-          }
-        >
-          <FaWhatsapp />
+      <ShowOnScroll offset={100}>
+        <div className="floating-whatsapp-btn">
+          <div
+            className="whatsapp-btn"
+            onClick={() =>
+              openWhatsAppChat(1234567890, "Hi there, I have a question...")
+            }
+          >
+            <FaWhatsapp />
+          </div>
         </div>
-      </div>
+      </ShowOnScroll>
     </>
   );
 };
