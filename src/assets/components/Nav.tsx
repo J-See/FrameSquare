@@ -93,10 +93,6 @@ const Nav = () => {
               >
                 About
               </Link>
-
-              {/* <NavLink to="/about" onClick={() => scrollToElement("about")}>
-                About
-              </NavLink> */}
             </li>
             <li>
               <NavLink to="services" onClick={toggleMenu}>

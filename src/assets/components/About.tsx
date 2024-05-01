@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/About.css";
+import { Link } from "react-scroll";
 const About = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -37,6 +38,16 @@ const About = () => {
         <button className="contactButton" onClick={handleContactClick}>
           {isMobile ? "Contact Me" : "Email Me"}
         </button>
+        <Link
+          to="map"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={800}
+          className="contactButton"
+        >
+          Reach us
+        </Link>
       </div>
       {/* right part */}
       <div className="right-part">

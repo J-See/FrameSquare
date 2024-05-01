@@ -117,8 +117,8 @@
 }
 
 .services-container img {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    aspect-ratio: 1;
     border-radius: inherit;
     border-bottom: 1px solid #ddd;
     /* Optional: add a border below the image */
