@@ -70,7 +70,9 @@ const Nav = () => {
         <nav className={`navbar container ${active ? "active" : ""}`}>
           {/* logo */}
           <div className="grid logo-img">
-            <img src={myLogo} alt="logo" />
+            <NavLink to="/" onClick={toggleMenu}>
+              <img src={myLogo} alt="logo" />
+            </NavLink>
           </div>
           {/* licks */}
           <ul className={`grid nav-lists ${active ? "active" : ""}`}>
