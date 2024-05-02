@@ -1,8 +1,11 @@
 .show-on-scroll {
+    pointer-events: none;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .show-on-scroll.visible {
+    pointer-events: all;
     opacity: 1;
+
 }

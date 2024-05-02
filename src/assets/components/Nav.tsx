@@ -81,37 +81,11 @@ const Nav = () => {
                 Home
               </NavLink>
             </li>
-            {/* <li>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-                className="nav-link"
-                onClick={toggleMenu}
-              >
-                About
-              </Link>
-            </li> */}
             <li>
               <NavLink to="services" onClick={toggleMenu}>
                 Services
               </NavLink>
             </li>
-            {/* <li>
-              <Link
-                to="map"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-                className="nav-link"
-                onClick={toggleMenu}
-              >
-                Reach us
-              </Link>
-            </li> */}
             <li>
               <a className="contact" onClick={handleContactClick}>
                 {isMobile ? "Call" : "Email"}
