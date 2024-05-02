@@ -12,9 +12,24 @@
     border: 2px solid #4433ff;
     background: #4433ff;
 
+    .arrow_icon {
+        animation: myBounce 1s ease 0s infinite normal none;
+    }
 
     &:hover {
         background: #fff;
         color: #4433ff;
+    }
+}
+
+@keyframes myBounce {
+
+    0%,
+    100% {
+        transform: translateY(3px);
+    }
+
+    50% {
+        transform: translateY(-3px);
     }
 }

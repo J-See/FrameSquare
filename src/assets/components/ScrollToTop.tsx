@@ -10,7 +10,7 @@ const ScrollToTop = () => {
   return (
     <>
       <button className="back-to-top" onClick={scrolltop}>
-        <AiOutlineArrowUp />
+        <AiOutlineArrowUp className="arrow_icon" />
       </button>
     </>
   );

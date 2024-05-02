@@ -7,8 +7,8 @@
     padding: 3% 10%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    column-gap: 2.5rem;
+    justify-content: center;
+    column-gap: 3.5rem;
 }
 
 .left-part {
@@ -22,6 +22,7 @@
     p {
         font-size: large;
         margin-bottom: 1em;
+        max-width: 30rem;
     }
 
     .contactButton {
