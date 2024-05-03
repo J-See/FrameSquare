@@ -37,6 +37,7 @@ const ServicesList: React.FC = () => {
                   <p>{service.description}</p>
                 </div>
               }
+              key={service.id}
               isFlipped={flippedIndex === service.id}
               onCardClick={() => handleCardClick(service.id)}
             />
