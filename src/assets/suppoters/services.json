@@ -2,35 +2,29 @@
   {
     "id": 1,
     "imageUrl": "/images/services_img/1-sliding-window.jpg",
-    "title": "Service 1",
+    "title": "Sliding Window",
     "description": "Description of Service 1"
   },
   {
     "id": 2,
-    "imageUrl": "/images/services_img/2-sliding-window.jpg",
-    "title": "Service 2",
-    "description": "Description of Service 2"
+    "imageUrl": "/images/services_img/3-sliding-door.jpg",
+    "title": "Sliding Door",
+    "description": "Description of Service 3"
   },
   {
     "id": 3,
-    "imageUrl": "/images/services_img/3-sliding -door.jpg",
-    "title": "Service 3",
+    "imageUrl": "/images/services_img/4-office-cabin.jpg",
+    "title": "Office Cabin",
     "description": "Description of Service 3"
   },
   {
     "id": 4,
-    "imageUrl": "/images/services_img/4-office-cabin.jpg",
-    "title": "Service 4",
-    "description": "Description of Service 3"
+    "imageUrl": "/images/services_img/5-mosquito-door.jpg",
+    "title": "Mosquito Net Door",
+    "description": "A Mosquito Mesh Door is a protective barrier designed to keep mosquitoes and other insects out while allowing fresh air to flow into a space."
   },
   {
     "id": 5,
-    "imageUrl": "/images/services_img/5-mosquito-door.jpg",
-    "title": "Service 5",
-    "description": "Description of Service 3"
-  },
-  {
-    "id": 6,
     "imageUrl": "/images/services_img/6-repairing.png",
     "title": "Service 5",
     "description": "Description of Service 3"
