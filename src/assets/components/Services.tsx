@@ -27,18 +27,24 @@ const Services = () => {
     <div className="services-section container" id="services">
       <h2 className="title">Our Services</h2>
       <div className="services-scroll-container">
+        {/* left button */}
         <div className="left-btn">
           <FaAnglesLeft className="left-icon" onClick={scrollLeft} />
         </div>
+        {/* card container */}
         <div className="services-container" ref={servicesContainerRef}>
+          {/* cards */}
           {servicesData.map((service) => (
             <div className="service" key={service.id}>
               <img src={service.imageUrl} alt={service.title} />
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <div className="service_body">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
             </div>
           ))}
         </div>
+        {/* right button */}
         <div className="right-btn">
           <FaAnglesRight className="right-icon" onClick={scrollRight} />
         </div>

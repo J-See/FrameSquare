@@ -9,7 +9,7 @@
     gap: 20px;
 }
 
-.service-list {
+/* .service-list {
     width: fit-content;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -23,7 +23,6 @@
         aspect-ratio: 1;
         border-radius: inherit;
         border-bottom: 1px solid #ddd;
-        /* Optional: add a border below the image */
     }
 
     h3 {
@@ -44,7 +43,7 @@
     &:hover {
         transform: translateY(-5px);
     }
-}
+} */
 
 @media only screen and (max-width: 768px) {
     .services-list-container {

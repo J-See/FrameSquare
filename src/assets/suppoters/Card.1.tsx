@@ -1,14 +1,7 @@
-import React, { useEffect, useState } from "react";
-import "../suppoters/Card.css";
+import React, { useState } from "react";
+import { CardProps } from "./Card";
 
-interface CardProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-  className?: string; // Optional custom class name
-}
-
-const Card: React.FC<CardProps> = ({
+export const Card: React.FC<CardProps> = ({
   imageUrl,
   title,
   description,
@@ -18,7 +11,6 @@ const Card: React.FC<CardProps> = ({
     width: window.innerWidth,
     height: window.innerHeight,
   });
-
   useEffect(() => {
     const handleResize = () =>
       setWindowSize({ width: window.innerWidth, height: window.innerHeight });
@@ -26,19 +18,15 @@ const Card: React.FC<CardProps> = ({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const isMobile = windowSize.width <= 768;
-
-  // const [disc_visible, setDisc_visible] = useState(false);
-  // const toggleDisc = () => setDisc_visible(!disc_visible);
+  const [disc_visible, setDisc_visible] = useState(false);
+  const toggleDisc = () => setDisc_visible(!disc_visible);
   return (
-    <div className={`card${isMobile ? "" : " card_"}${className}`}>
+    <div className={`card card_ ${className}`} onClick={toggleDisc}>
       {imageUrl && <img src={imageUrl} alt={title} />}
-      <div className={`card_body`}>
+      <div className={`card_body ${disc_visible ? "show_description" : ""}`}>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </div>
   );
 };
-
-export default Card;
