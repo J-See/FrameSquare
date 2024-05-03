@@ -39,7 +39,6 @@ const Services = () => {
               <img src={service.imageUrl} alt={service.title} />
               <div className="service_body">
                 <h3>{service.title}</h3>
-                <p>{service.description}</p>
               </div>
             </div>
           ))}
