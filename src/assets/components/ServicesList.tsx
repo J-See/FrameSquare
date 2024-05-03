@@ -1,14 +1,20 @@
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import "../styles/ServicesList.css";
 import Card from "../suppoters/Card.tsx";
 import FlipCard from "../suppoters/FlipCard.tsx";
 import servicesData from "../suppoters/services.json";
 
-const ServicesList = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+const ServicesList: React.FC = () => {
+  const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
 
   const handleCardClick = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
+    if (flippedIndex === index) {
+      // Clicked on the already flipped card, so unflip it
+      setFlippedIndex(null);
+    } else {
+      // Clicked on a new card, flip it and unflip the previously flipped card
+      setFlippedIndex(index);
+    }
   };
 
   return (
@@ -31,6 +37,8 @@ const ServicesList = () => {
                   <p>{service.description}</p>
                 </div>
               }
+              isFlipped={flippedIndex === service.id}
+              onCardClick={() => handleCardClick(service.id)}
             />
             // <Card
             //   title={service.title}
