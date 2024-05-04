@@ -12,9 +12,9 @@ const App = () => {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<ServicesList />} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="/FrameSquare/" element={<Home />} />
+          <Route path="/FrameSquare/services" element={<ServicesList />} />
+          <Route path="/FrameSquare/*" element={<NoPage />} />
         </Routes>
         <Foot />
       </BrowserRouter>
