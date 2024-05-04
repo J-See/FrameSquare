@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../styles/About.css";
 import { Link } from "react-scroll";
 const About = () => {
-  const profile_img = "/images/PP.jpg";
+  const profile_img = "FrameSquare/images/PP.jpg";
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const checkIsMobile = () => {

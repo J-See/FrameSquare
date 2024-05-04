@@ -1,31 +1,31 @@
 [
   {
     "id": 1,
-    "imageUrl": "/images/services_img/1-sliding-window.jpg",
+    "imageUrl": "FrameSquare/images/services_img/1-sliding-window.jpg",
     "title": "Sliding Window",
     "description": "A type of window that opens horizontally by sliding along a track, offering ease of operation and space-saving benefits."
   },
   {
     "id": 2,
-    "imageUrl": "/images/services_img/3-sliding-door.jpg",
+    "imageUrl": "FrameSquare/images/services_img/3-sliding-door.jpg",
     "title": "Sliding Door",
     "description": "A sleek and space-saving option for modern homes, offering seamless access to outdoor spaces while maximizing natural light and ventilation."
   },
   {
     "id": 3,
-    "imageUrl": "/images/services_img/4-office-cabin.jpg",
+    "imageUrl": "FrameSquare/images/services_img/4-office-cabin.jpg",
     "title": "Office Cabin",
     "description": "Efficiently designed spaces that provide privacy and functionality for individual or small group work, fostering productivity and focus in a professional environment."
   },
   {
     "id": 4,
-    "imageUrl": "/images/services_img/5-mosquito-door.jpg",
+    "imageUrl": "FrameSquare/images/services_img/5-mosquito-door.jpg",
     "title": "Mosquito Net Door",
     "description": "A Mosquito Mesh Door is a protective barrier designed to keep mosquitoes and other insects out while allowing fresh air to flow into a space."
   },
   {
     "id": 5,
-    "imageUrl": "/images/services_img/6-repairing.png",
+    "imageUrl": "FrameSquare/images/services_img/6-repairing.png",
     "title": "Repairing",
     "description": "Skilled professionals adept at repairing all types of aluminium structures, ensuring durability and restoring functionality to aluminium doors, windows, frames, and other fixtures with precision and expertise."
   }
