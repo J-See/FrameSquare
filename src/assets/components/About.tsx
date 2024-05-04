@@ -36,8 +36,10 @@ const About = () => {
       <div className="left-part">
         <h2>Ashok Vishwakarma</h2>
         <p>
-          I am aluminium fabrication worker over 20+ years of experience and
-          have served 100+ satisfied customers.
+          I am aluminium fabrication worker over{" "}
+          <span className="text_gradient">20+ years</span> of experience and
+          have served{" "}
+          <span className="text_gradient">100+ satisfied customers.</span>
         </p>
         <button className="contactButton" onClick={handleContactClick}>
           {isMobile ? "Contact Me" : "Email Me"}

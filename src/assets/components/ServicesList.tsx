@@ -29,6 +29,7 @@ const ServicesList: React.FC = () => {
                   {service.imageUrl && (
                     <img src={service.imageUrl} alt={service.title} />
                   )}
+                  <div className="toast_message">click to flip</div>
                 </div>
               }
               backContent={
