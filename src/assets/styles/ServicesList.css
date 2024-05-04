@@ -45,6 +45,11 @@
 }
 
 .card_body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 43px 26px;
     width: inherit;
     height: inherit;
@@ -65,7 +70,8 @@
     }
 
     p {
-        height: 260px;
+        max-height: 260px;
+        overflow-y: auto;
         text-align: center;
         text-transform: math-auto;
     }
