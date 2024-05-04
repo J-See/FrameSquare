@@ -3,19 +3,19 @@
     "id": 1,
     "imageUrl": "/images/services_img/1-sliding-window.jpg",
     "title": "Sliding Window",
-    "description": "Description of Service 1"
+    "description": "A type of window that opens horizontally by sliding along a track, offering ease of operation and space-saving benefits."
   },
   {
     "id": 2,
     "imageUrl": "/images/services_img/3-sliding-door.jpg",
     "title": "Sliding Door",
-    "description": "Description of Service 3"
+    "description": "A sleek and space-saving option for modern homes, offering seamless access to outdoor spaces while maximizing natural light and ventilation."
   },
   {
     "id": 3,
     "imageUrl": "/images/services_img/4-office-cabin.jpg",
     "title": "Office Cabin",
-    "description": "Description of Service 3"
+    "description": "Efficiently designed spaces that provide privacy and functionality for individual or small group work, fostering productivity and focus in a professional environment."
   },
   {
     "id": 4,
@@ -26,7 +26,7 @@
   {
     "id": 5,
     "imageUrl": "/images/services_img/6-repairing.png",
-    "title": "Service 5",
-    "description": "Description of Service 3"
+    "title": "Repairing",
+    "description": "Skilled professionals adept at repairing all types of aluminium structures, ensuring durability and restoring functionality to aluminium doors, windows, frames, and other fixtures with precision and expertise."
   }
 ]
