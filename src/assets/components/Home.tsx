@@ -1,5 +1,3 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
 import About from "../components/About";
 import Services from "../components/Services";
 import Map from "../components/Map";

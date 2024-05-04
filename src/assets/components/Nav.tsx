@@ -3,7 +3,6 @@ import myLogo from "/images/logo.svg";
 import menu from "/images/menu.svg";
 import close from "/images/close.svg";
 import "../styles/Nav.css";
-import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
@@ -14,7 +13,7 @@ const Nav = () => {
   };
 
   // ## Handle click outside the navbar to deactivate
-  const handleClickOutside = (event) => {
+  const handleClickOutside = (event: any) => {
     if (!event.target.closest(".navbar")) {
       // Check if clicked outside navbar
       setActive(false);
@@ -56,14 +55,14 @@ const Nav = () => {
     }
   };
 
-  // ## scroll with NavLink
-  const scrollToElement = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-      element.classList.add("smooth-scroll");
-    }
-  };
+  // // ## scroll with NavLink
+  // const scrollToElement = (id) => {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth", block: "start" });
+  //     element.classList.add("smooth-scroll");
+  //   }
+  // };
   return (
     <>
       <header>

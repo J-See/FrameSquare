@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/Map.css";
 const Map = () => {
   return (
@@ -10,7 +9,7 @@ const Map = () => {
           width="80%"
           height="450"
           style={{ border: 0, color: "white" }}
-          allowFullScreen=""
+          // allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

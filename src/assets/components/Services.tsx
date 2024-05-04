@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { FaAnglesLeft, FaAnglesRight } from "react-icons/fa6";
 import "../styles/Services.css";
 import servicesData from "../suppoters/services.json";
@@ -8,8 +8,8 @@ const Services = () => {
 
   const scrollLeft = () => {
     if (servicesContainerRef.current) {
-      servicesContainerRef.current.scrollBy({
-        left: -300, // Adjust the scroll amount as needed
+      (servicesContainerRef.current as HTMLElement).scrollBy({
+        left: -300,
         behavior: "smooth",
       });
     }
@@ -17,8 +17,8 @@ const Services = () => {
 
   const scrollRight = () => {
     if (servicesContainerRef.current) {
-      servicesContainerRef.current.scrollBy({
-        left: 300, // Adjust the scroll amount as needed
+      (servicesContainerRef.current as HTMLElement).scrollBy({
+        left: 300,
         behavior: "smooth",
       });
     }

@@ -1,5 +1,4 @@
 import "../suppoters/FlipCard.css";
-import React, { useEffect, useState } from "react";
 interface CardProps {
   //   frontContent: JSX.Element;
   //   backContent: JSX.Element;

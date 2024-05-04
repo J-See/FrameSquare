@@ -1,6 +1,5 @@
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import "../styles/ServicesList.css";
-import Card from "../suppoters/Card.tsx";
 import FlipCard from "../suppoters/FlipCard.tsx";
 import servicesData from "../suppoters/services.json";
 

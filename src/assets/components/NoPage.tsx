@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMdHome } from "react-icons/io";
 import "../styles/NoPage.css";
 import { NavLink } from "react-router-dom";

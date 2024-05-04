@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/About.css";
 import { Link } from "react-scroll";
 const About = () => {
