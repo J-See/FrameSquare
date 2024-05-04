@@ -9,12 +9,12 @@ import NoPage from "./assets/components/NoPage";
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/FrameSquare">
         <Nav />
         <Routes>
-          <Route path="/FrameSquare/" element={<Home />} />
-          <Route path="/FrameSquare/services" element={<ServicesList />} />
-          <Route path="/FrameSquare/*" element={<NoPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesList />} />
+          <Route path="/*" element={<NoPage />} />
         </Routes>
         <Foot />
       </BrowserRouter>

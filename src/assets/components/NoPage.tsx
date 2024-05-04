@@ -9,7 +9,7 @@ const NoPage = () => {
       <div className="no_page">
         <img src={no_page} alt="404 image" />
         <p className="gotohome">
-          <NavLink to="/FrameSquare/">
+          <NavLink to="/">
             <IoMdHome />
             Back to Home
           </NavLink>

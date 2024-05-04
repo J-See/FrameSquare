@@ -1,6 +1,7 @@
 {
   "name": "framesquare",
-  "private": true,
+  "homepage": "https://J-See.github.io/FrameSquare",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -69,19 +69,19 @@ const Nav = () => {
         <nav className={`navbar container ${active ? "active" : ""}`}>
           {/* logo */}
           <div className="grid logo-img">
-            <NavLink to="/FrameSquare/">
+            <NavLink to="/">
               <img src={myLogo} alt="logo" />
             </NavLink>
           </div>
           {/* licks */}
           <ul className={`grid nav-lists ${active ? "active" : ""}`}>
             <li>
-              <NavLink to="/FrameSquare/" onClick={toggleMenu}>
+              <NavLink to="/" onClick={toggleMenu}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/FrameSquare/services" onClick={toggleMenu}>
+              <NavLink to="/services" onClick={toggleMenu}>
                 Services
               </NavLink>
             </li>
