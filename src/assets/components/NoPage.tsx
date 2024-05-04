@@ -3,7 +3,7 @@ import "../styles/NoPage.css";
 import { NavLink } from "react-router-dom";
 
 const NoPage = () => {
-  const no_page = "/images/404-nopage.svg";
+  const no_page = "/FrameSquare/images/404-nopage.svg";
   return (
     <>
       <div className="no_page">
