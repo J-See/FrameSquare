@@ -14,9 +14,7 @@ const WA = () => {
         <div className="floating-whatsapp-btn">
           <div
             className="whatsapp-btn"
-            onClick={() =>
-              openWhatsAppChat(1234567890, "Hi there, I have a question...")
-            }
+            onClick={() => openWhatsAppChat(9819459305, "")}
           >
             <FaWhatsapp />
           </div>

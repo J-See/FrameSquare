@@ -18,7 +18,7 @@ const About = () => {
   }, []);
   const handleContactClick = () => {
     const phoneNumber = "9819459305";
-    const emailAddress = "your-email-address@example.com";
+    const emailAddress = "ashokvishwakarma1406@gmail.com";
 
     if (isMobile) {
       if (/WhatsApp/.test(navigator.userAgent)) {
