@@ -30,6 +30,11 @@ header nav {
     grid-template-areas: "logo navlinks";
 }
 
+.logo-img img {
+    margin: 3px;
+    width: 75px;
+}
+
 .nav-lists {
     display: flex;
     flex-direction: row;
@@ -87,9 +92,9 @@ header nav {
 
 
 @media only screen and (max-width: 768px) {
-    div.logo-img img {
+    /* div.logo-img img {
         max-width: 11em;
-    }
+    } */
 
     .menu-icon {
         display: block;

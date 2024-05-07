@@ -1,22 +1,76 @@
 .hero {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16/9;
-    /* height: 500px; */
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/images/bg.jpg');
-    background-size: 100% auto;
-    /* background-size: cover; */
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1.5fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .greeting_container {
+        justify-self: center;
+        min-width: 13rem;
+        position: relative;
+        font-size: 4rem;
+        font-weight: 600;
+        overflow: hidden;
+        height: 5rem;
+        transition: ease-out;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '|';
+            top: 0;
+            left: 0;
+            animation: opacity 2s infinite ease;
+        }
+
+        &::after {
+            left: 94%;
+
+        }
+
+
+        .greeting {
+            list-style: none;
+            text-transform: uppercase;
+            animation: change 5s infinite;
+        }
+
+        li,
+        span {
+            font-family: 'Jaini', system-ui;
+        }
+
+        li span {
+            color: rgb(29, 226, 52);
+        }
+    }
+
+    .company_name {
+
+        font-weight: 900;
+        font-size: 2rem;
+
+
+        p:last-child {
+            font-family: "Vollkorn";
+            font-size: 3rem;
+        }
+
+    }
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    height: -webkit-fill-available;
+@keyframes change {
+
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -51%, 0);
+    }
+
 }
