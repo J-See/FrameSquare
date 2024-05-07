@@ -16,7 +16,9 @@ const Hero = () => {
 
       <div className="company_name">
         <p>Welcome to</p>
-        <p>FrameSquare</p>
+        <p>
+          <span>F</span>rame<span>S</span>quare
+        </p>
       </div>
     </div>
   );

@@ -39,7 +39,7 @@ const About = () => {
           I am aluminium fabrication worker over{" "}
           <span className="text_gradient">20+ years</span> of experience and
           have served{" "}
-          <span className="text_gradient">100+ satisfied customers.</span>
+          <span className="text_gradient">500+ satisfied customers.</span>
         </p>
         <button className="contactButton" onClick={handleContactClick}>
           {isMobile ? "Contact Me" : "Email Me"}

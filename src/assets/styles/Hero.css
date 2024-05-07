@@ -1,5 +1,5 @@
 .hero {
-    padding: 2rem 0;
+    padding: 3rem 0;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1.5fr;
@@ -23,7 +23,6 @@
             content: '|';
             top: 0;
             left: 0;
-            animation: opacity 2s infinite ease;
         }
 
         &::after {
@@ -35,7 +34,8 @@
         .greeting {
             list-style: none;
             text-transform: uppercase;
-            animation: change 5s infinite;
+            transform: translateY(-50%);
+            /* animation: change 5s infinite; */
         }
 
         li,
@@ -49,20 +49,39 @@
     }
 
     .company_name {
-
+        margin-top: 20px;
         font-weight: 900;
         font-size: 2rem;
 
 
         p:last-child {
             font-family: "Vollkorn";
-            font-size: 3rem;
+            font-size: 5rem;
+            letter-spacing: 2px;
+            border-bottom-left-radius: 10px solid;
+            border-bottom-right-radius: 10px solid;
+            border-bottom: 3.5px solid;
+
+            span {
+                color: crimson;
+            }
         }
 
     }
 }
 
-@keyframes change {
+@media only screen and (max-width: 768px) {
+    .hero {
+        .company_name {
+            p:last-child {
+                font-size: 3rem;
+            }
+        }
+    }
+
+}
+
+/* @keyframes change {
 
     0%,
     100% {
@@ -73,4 +92,4 @@
         transform: translate3d(0, -51%, 0);
     }
 
-}
+} */
